@@ -11,8 +11,45 @@
   },
   "formatter": {
     "enabled": true,
+    "formatWithErrors": false,
     "indentStyle": "space",
-    "indentWidth": 2
+    "indentWidth": 2,
+    "lineWidth": 80,
+    "lineEnding": "lf",
+    "attributePosition": "auto"
+  },
+  "javascript": {
+    "formatter": {
+      "jsxQuoteStyle": "double",
+      "quoteProperties": "asNeeded",
+      "semicolons": "asNeeded",
+      "arrowParentheses": "always",
+      "bracketSameLine": false,
+      "bracketSpacing": true,
+      "quoteStyle": "single",
+      "trailingCommas": "es5",
+      "attributePosition": "auto"
+    },
+    "globals": [
+      "__dirname",
+      "__filename",
+      "Buffer",
+      "global",
+      "process",
+      "console",
+      "module",
+      "require",
+      "exports",
+      "window",
+      "document",
+      "navigator",
+      "location",
+      "history",
+      "localStorage",
+      "sessionStorage",
+      "React",
+      "JSX"
+    ]
   },
   "linter": {
     "enabled": true,
