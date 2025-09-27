@@ -1,4 +1,6 @@
+/** biome-ignore-all lint/security/noDangerouslySetInnerHtml: ignored */
 import { Head, Html, Main, NextScript } from 'next/document'
+import { getCssText } from '@/styles'
 
 export default function Document() {
   return (
@@ -14,6 +16,11 @@ export default function Document() {
           href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
           rel="stylesheet"
         ></link>
+
+        <style
+          id="stitches"
+          dangerouslySetInnerHTML={{ __html: getCssText() }}
+        />
       </Head>
       <body className="antialiased">
         <Main />
