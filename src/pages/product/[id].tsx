@@ -1,3 +1,4 @@
+/** biome-ignore-all lint/a11y/useButtonType: ignored */
 import type { GetStaticPaths, GetStaticProps } from 'next'
 import Image from 'next/image'
 import type Stripe from 'stripe'
@@ -44,6 +45,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
   }
 }
 
+// biome-ignore lint/suspicious/noExplicitAny: ignored
 export const getStaticProps: GetStaticProps<any, { id: string }> = async ({
   params,
 }) => {
