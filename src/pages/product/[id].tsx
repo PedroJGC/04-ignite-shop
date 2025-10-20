@@ -1,6 +1,7 @@
 /** biome-ignore-all lint/a11y/useButtonType: ignored */
 import type { GetStaticPaths, GetStaticProps } from 'next'
 import Image from 'next/image'
+import { useRouter } from 'next/router'
 import type Stripe from 'stripe'
 import { stripe } from '@/lib/stripe'
 import {
